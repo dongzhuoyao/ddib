@@ -10,6 +10,7 @@ pip install torchdiffeq==0.2.3
 pip install pyrootutils rich
 pip install hydra-core --upgrade
 pip install -U hydra_colorlog
+conda install -c conda-forge mpi4py openmpi
 
 ```
 
