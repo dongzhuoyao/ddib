@@ -1,3 +1,19 @@
+# Install
+
+```
+conda create -n ddib  python=3.9
+conda install pytorch==2.0 torchvision  cudatoolkit=11.5 -c pytorch -c nvidia #make sure pytorch is lower than pytorch-2.0.0-py3.9_cuda11.8_cudnn8.7.0_0 ,cuda is not 12.1
+pip install  wandb lightning-bolts matplotlib numpy scipy scikit-learn scprep scanpy timm
+pip install torchdyn>=1.0.5   # 1.0.4 is broken on pypi
+pip install pot
+pip install torchdiffeq==0.2.3
+pip install pyrootutils rich
+pip install hydra-core --upgrade
+pip install -U hydra_colorlog
+
+```
+
+
 # Dual Diffusion Implicit Bridges (ICLR 2023)
 
 [**Dual Diffusion Implicit Bridges for Image-to-Image Translation**](https://openreview.net/forum?id=5HLoTvVGDe)<br/>
